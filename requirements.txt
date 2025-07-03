@@ -1,0 +1,16 @@
+# requirements.txt
+
+# Framework principal de agentes
+crewai
+crewai-tools
+
+# Banco de dados vetorial
+chromadb
+
+# Ferramentas de processamento de documentos
+langchain-docling
+
+# Pacotes de utilidades específicas do seu projeto
+agentops
+imbox
+pyyaml
