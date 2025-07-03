@@ -1,0 +1,23 @@
+2025-07-03 04:23:03,897 - INFO - AgentOps: 'crewai' is the first-targeted agentic library. Will uninstrument providers if any are/become active.
+2025-07-03 04:23:03,909 - INFO - AgentOps: Successfully instrumented 'CrewaiInstrumentor' for package 'agentops.instrumentation.agentic.crewai'.
+2025-07-03 04:23:03,910 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=22e5739154fb2bd894df019e90e723fd
+2025-07-03 04:23:03,978 - ERROR - Error in span models/gemini-1.5-flash-latest.llm: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=models/gemini-1.5-flash-latest
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+2025-07-03 04:23:03,989 - ERROR - Error in span Professor Conteudista
+.agent: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=models/gemini-1.5-flash-latest
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+2025-07-03 04:23:04,008 - ERROR - Error in span O Professor Conteudista deve redigir questões de avaliação em inglês de acordo com os objetivos de aprendizagem e o template da instituição.
+Ele deve:
+- Reconhecer a estrutura das questões apresentadas no documento {TEMPLATE_QUESTOES};
+- Após compreender como devem ser escritas, elaborar uma questão de cada tipo, conforme apresentado no template.
+- Cada questão deve estar alinhada com os objetivos de aprendizagem definidos no documento {OBJETIVOS}.
+- Utilizar como fundamentação teórica o documento {FUNDAMENTACAO_TEORICA}.
+- Evitar escrever palavras iguais ou sinônimas ao documento {STOP_WORDS}.
+- Evitar escrever palavras iguais ou similares a "fundamental, essencial, importante..." na contextualização, enunciado ou alternativa.
+- Expressões hiperbólicas devem ser evitadas em textos acadêmicos, científicos ou técnicos, onde a objetividade e a precisão são necessárias.
+- A contextualização pode utilizar alguma imagem retirada do documento de fundamentação teórica, ou algum texto de interpretação, ou uma pode aplicar uma estudo de caso onde o aluno deve elaborar uma analise do que está sendo proposto e assim escolher uma das alternativas.
+- Durante o desenvolvimento das questões, fazer com que as de Asserção-Razão tenha prioridade entre as "duas serem verdadeiras e mas não justifica a primeira" e "as duas falsas".
+- As alternativas devem fazer afirmações de coisas erradas, como se fosse um mentiroso que não sabe o conteúdo, porém tenta falar como se fosse verdade.
+.task: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=models/gemini-1.5-flash-latest
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+2025-07-03 04:23:05,140 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=22e5739154fb2bd894df019e90e723fd
